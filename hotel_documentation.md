@@ -235,40 +235,6 @@ Opis diagramu aktywności dla obsługi gościa (zameldowanie i wymeldowanie):
 5.  **Potwierdzenie:** System wyświetla potwierdzenie wykonania operacji (zameldowania lub wymeldowania).
 6.  **Koniec:** Proces obsługi gościa zakończony.
 
-## Diagramy Klas (Class Diagrams)
-
-#### Diagram Klas dla Zarządzania Cenami i Dostawcami
-
-![Diagram klas cenników i dostawców](diagrams/class_diagram_cenniki_dostawcy.svg)
-
-#### Główny Diagram Klas
-
-![Diagram klas](diagrams/class_diagram.svg)
-
-#### Diagram Klas dla Zarządzania Cenami
-
-![Diagram klas cenników](diagrams/class_diagram_cenniki.svg)
-
-#### Diagram Klas dla Historii Zmian
-
-![Diagram klas historii](diagrams/class_diagram_historia.svg)
-
-### Rezerwacje
-
-Opis diagramu klas dla rezerwacji:
-
-*   **Klasa Rezerwacja:**
-    *   `id_rezerwacji`: int (identyfikator rezerwacji)
-    *   `id_klienta`: int (identyfikator klienta)
-    *   `id_pokoju`: int (identyfikator pokoju)
-    *   `data_od`: data (data rozpoczęcia rezerwacji)
-    *   `data_do`: data (data zakończenia rezerwacji)
-    *   `status`: string (status rezerwacji: "potwierdzona", "anulowana", "oczekująca")
-    *   **Relacje:**
-        *   Rezerwacja ma relację *wiele-do-jednego* z klasą `Gość` (jeden gość może mieć wiele rezerwacji).
-        *   Rezerwacja ma relację *wiele-do-jednego* z klasą `Pokój` (jeden pokój może mieć wiele rezerwacji).
-        *   Gość ma relację *jeden-do-wielu* z klasą `Rezerwacja` (jeden gość może mieć wiele rezerwacji).
-
 ## Diagramy
 
 ### Diagram Przypadków Użycia
