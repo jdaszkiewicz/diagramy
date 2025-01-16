@@ -1,0 +1,46 @@
+@startuml
+title Diagram Aktywności - Zarządzanie dostawcami
+
+start
+
+:Pracownik wybiera opcję zarządzania dostawcami;
+:Wyświetlenie listy dostawców;
+
+if (Operacja?) then (Dodanie)
+  :Wprowadzenie danych nowego dostawcy;
+  :Walidacja danych;
+  if (Dane poprawne?) then (Tak)
+    :Zapisanie dostawcy w systemie;
+    :Test połączenia z API;
+    :Wyświetlenie potwierdzenia;
+  else (Nie)
+    :Wyświetlenie błędów walidacji;
+    :Powrót do formularza;
+  endif
+else if (Edycja)
+  :Wybór dostawcy do edycji;
+  :Modyfikacja danych dostawcy;
+  :Walidacja danych;
+  if (Dane poprawne?) then (Tak)
+    :Zapisanie zmian;
+    :Test połączenia z API;
+    :Wyświetlenie potwierdzenia;
+  else (Nie)
+    :Wyświetlenie błędów walidacji;
+    :Powrót do formularza;
+  endif
+else (Usunięcie)
+  :Wybór dostawcy do usunięcia;
+  :Potwierdzenie usunięcia;
+  if (Potwierdzone?) then (Tak)
+    :Sprawdzenie powiązanych rekordów;
+    :Usunięcie dostawcy;
+    :Wyświetlenie potwierdzenia;
+  else (Nie)
+    :Anulowanie operacji;
+  endif
+endif
+
+stop
+
+@enduml

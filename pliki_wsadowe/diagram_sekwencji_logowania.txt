@@ -1,0 +1,25 @@
+ @startuml
+ title Diagram Sekwencji Logowania
+
+ actor Użytkownik
+ participant "Interfejs Użytkownika" as UI
+ participant "Kontroler Logowania" as Controller
+ participant "Serwis Uwierzytelniania" as AuthService
+ participant "Baza Danych" as DB
+
+ Użytkownik -> UI: Wprowadza login i hasło
+ UI -> Controller: Przekazuje dane logowania
+ Controller -> AuthService: Weryfikuje dane logowania
+ AuthService -> DB: Pobiera dane użytkownika
+ DB --> AuthService: Zwraca dane użytkownika
+ AuthService --> Controller: Zwraca wynik weryfikacji
+
+ alt Poprawne dane
+     Controller -> UI: Przekazuje potwierdzenie logowania
+     UI -> Użytkownik: Wyświetla powitanie
+ else Niepoprawne dane
+     Controller -> UI: Przekazuje błąd logowania
+     UI -> Użytkownik: Wyświetla komunikat błędu
+ end
+
+ @enduml

@@ -1,0 +1,35 @@
+@startuml
+title Diagram Aktywności - Synchronizacja cen z dostawcami
+
+start
+
+:Uruchomienie synchronizacji;
+if (Typ synchronizacji?) then (Automatyczna)
+  :System sprawdza harmonogram synchronizacji;
+  :Pobranie aktualnych cen z API dostawców;
+else (Ręczna)
+  :Pracownik wybiera dostawcę do synchronizacji;
+  :Pobranie aktualnych cen z API dostawcy;
+endif
+
+:Weryfikacja zgodności cen;
+if (Ceny zgodne?) then (Tak)
+  :Aktualizacja lokalnego cennika;
+  :Zapisanie logów synchronizacji;
+  :Wygenerowanie raportu;
+else (Nie)
+  :Powiadomienie o niezgodnościach;
+  :Oczekiwanie na decyzję pracownika;
+  if (Zaakceptować zmiany?) then (Tak)
+    :Aktualizacja lokalnego cennika;
+    :Zapisanie logów synchronizacji;
+    :Wygenerowanie raportu;
+  else (Nie)
+    :Odrzucenie zmian;
+    :Zapisanie logów synchronizacji;
+  endif
+endif
+
+stop
+
+@enduml

@@ -1,0 +1,3007 @@
+<div class="zeus-container">
+
+<div><!--content-->
+<!--heading--><h1 class="chap"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#0"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#0"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#0"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Activity Diagram (New Syntax)</h1>
+<p></p>
+The <a href="activity-diagram-legacy">previous syntax used for activity diagrams</a> encountered several limitations and maintainability issues. Recognizing these drawbacks, we have introduced a wholly revamped syntax and implementation that is not only user-friendly but also more stable.
+<p></p>
+<h3>Benefits of the New Syntax</h3>
+<p></p>
+<ul>
+<li>No Dependency on Graphviz: Just like with sequence diagrams, the new syntax eliminates the necessity for Graphviz installation, thereby simplifying the setup process.</li>
+<li>Ease of Maintenance: The intuitive nature of the new syntax means it is easier to manage and maintain your diagrams.</li>
+</ul>
+<p></p>
+<h3>Transition to the New Syntax</h3>
+While we will continue to support the old syntax to maintain compatibility, we highly encourage users to migrate to the new syntax to leverage the enhanced features and benefits it offers.
+<p></p>
+Make the shift today and experience a more streamlined and efficient diagramming process with the new activity diagram syntax.
+<a style="position:relative;top:-38px;" name="301241875e1def42"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#1"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#1"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#1"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Simple action</h2>
+Activities label starts with <code class="cod">:</code> and ends with <code class="cod">;</code>.
+<p></p>
+Text formatting can be done using <a href="creole">creole wiki syntax</a>.
+<p></p>
+They are implicitly linked in their definition order.
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg9331674bc9d76b53d61403a52c0077ba" class="msg">
+🎉 Copied!
+</div>
+<img width="16" height="16" id="img9331674bc9d76b53d61403a52c0077ba" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('9331674bc9d76b53d61403a52c0077ba')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('9331674bc9d76b53d61403a52c0077ba')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('9331674bc9d76b53d61403a52c0077ba')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre9331674bc9d76b53d61403a52c0077ba">@startuml
+:Hello world;
+:This is defined on
+several **lines**;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="135" height="126" class="scale" src="/imgw/img-9331674bc9d76b53d61403a52c0077ba.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="45e7ad1c1b3c39e2"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#2"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#2"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#2"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Start/Stop/End</h2>
+<p></p>
+You can use <code class="cod">start</code> and <code class="cod">stop</code> keywords to denote the
+beginning and the end of a diagram.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg3a694a3b8adf3752cf2bc8d3d82a3a55" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img3a694a3b8adf3752cf2bc8d3d82a3a55" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('3a694a3b8adf3752cf2bc8d3d82a3a55')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('3a694a3b8adf3752cf2bc8d3d82a3a55')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('3a694a3b8adf3752cf2bc8d3d82a3a55')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre3a694a3b8adf3752cf2bc8d3d82a3a55">@startuml
+start
+:Hello world;
+:This is defined on
+several **lines**;
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="135" height="207" class="scale" src="/imgw/img-3a694a3b8adf3752cf2bc8d3d82a3a55.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+You can also use the <code class="cod">end</code> keyword.
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg9b924539413781c48a2c27d0bbc2fa8a" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img9b924539413781c48a2c27d0bbc2fa8a" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('9b924539413781c48a2c27d0bbc2fa8a')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('9b924539413781c48a2c27d0bbc2fa8a')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('9b924539413781c48a2c27d0bbc2fa8a')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre9b924539413781c48a2c27d0bbc2fa8a">@startuml
+start
+:Hello world;
+:This is defined on
+several **lines**;
+end
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="135" height="205" class="scale" src="/imgw/img-9b924539413781c48a2c27d0bbc2fa8a.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="9d3afea73e90192d"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#3"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#3"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#3"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Conditional</h2>
+<p></p>
+You can use <code class="cod">if</code>, <code class="cod">then</code>, <code class="cod">else</code> and <code class="cod">endif</code> keywords to put tests in your diagram.
+Labels can be provided using parentheses.
+<p></p>
+The 3 syntaxes are possible:
+<ul>
+<li><code class="cod">if (...) then (...) ... [else (...) ...] endif</code></li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgb44d8fd3901d690ecb7c7463c100744f" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgb44d8fd3901d690ecb7c7463c100744f" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('b44d8fd3901d690ecb7c7463c100744f')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('b44d8fd3901d690ecb7c7463c100744f')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('b44d8fd3901d690ecb7c7463c100744f')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="preb44d8fd3901d690ecb7c7463c100744f">@startuml
+
+start
+
+if (Graphviz installed?) then (yes)
+  :process all\ndiagrams;
+else (no)
+  :process only
+  __sequence__ and __activity__ diagrams;
+endif
+
+stop
+
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="306" height="216" class="scale" src="/imgw/img-b44d8fd3901d690ecb7c7463c100744f.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<ul>
+<li><code class="cod">if (...) is (...) then ... [else (...) ...] endif</code></li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg9da1843b834eabf517779091d186cd67" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img9da1843b834eabf517779091d186cd67" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('9da1843b834eabf517779091d186cd67')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('9da1843b834eabf517779091d186cd67')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('9da1843b834eabf517779091d186cd67')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre9da1843b834eabf517779091d186cd67">@startuml
+if (color?) is (&lt;color:red&gt;red) then
+:print red;
+else 
+:print not red;
+endif
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="189" height="122" class="scale" src="/imgw/img-9da1843b834eabf517779091d186cd67.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<ul>
+<li><code class="cod">if (...) equals (...) then ... [else (...) ...] endif</code></li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg6a560f43beb9ce9d8fb4c8a7c5239486" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img6a560f43beb9ce9d8fb4c8a7c5239486" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('6a560f43beb9ce9d8fb4c8a7c5239486')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('6a560f43beb9ce9d8fb4c8a7c5239486')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('6a560f43beb9ce9d8fb4c8a7c5239486')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre6a560f43beb9ce9d8fb4c8a7c5239486">@startuml
+if (counter?) equals (5) then
+:print 5;
+else 
+:print not 5;
+endif
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="171" height="122" class="scale" src="/imgw/img-6a560f43beb9ce9d8fb4c8a7c5239486.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/301/activity-diagram-beta?show=302#a302">QA-301</a>]</em>
+<p></p>
+<h3>Several tests (horizontal mode)</h3>
+<p></p>
+You can use the <code class="cod">elseif</code> keyword to have several tests <em>(by default, it is the horizontal mode)</em>:
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgb314e5ee5fabc663802872521884ae0d" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgb314e5ee5fabc663802872521884ae0d" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('b314e5ee5fabc663802872521884ae0d')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('b314e5ee5fabc663802872521884ae0d')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('b314e5ee5fabc663802872521884ae0d')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="preb314e5ee5fabc663802872521884ae0d">@startuml
+start
+if (condition A) then (yes)
+  :Text 1;
+elseif (condition B) then (yes)
+  :Text 2;
+  stop
+(no) elseif (condition C) then (yes)
+  :Text 3;
+(no) elseif (condition D) then (yes)
+  :Text 4;
+else (nothing)
+  :Text else;
+endif
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="498" height="271" class="scale" src="/imgw/img-b314e5ee5fabc663802872521884ae0d.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3>Several tests (vertical mode)</h3>
+<p></p>
+You can use the command <code class="cod">!pragma useVerticalIf on</code> to have the tests in vertical mode:
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg4026dd5ca64fa051476e84112c2df5a6" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img4026dd5ca64fa051476e84112c2df5a6" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('4026dd5ca64fa051476e84112c2df5a6')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('4026dd5ca64fa051476e84112c2df5a6')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('4026dd5ca64fa051476e84112c2df5a6')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre4026dd5ca64fa051476e84112c2df5a6">@startuml
+!pragma useVerticalIf on
+start
+if (condition A) then (yes)
+  :Text 1;
+elseif (condition B) then (yes)
+  :Text 2;
+  stop
+elseif (condition C) then (yes)
+  :Text 3;
+elseif (condition D) then (yes)
+  :Text 4;
+else (nothing)
+  :Text else;
+endif
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="183" height="539" class="scale" src="/imgw/img-4026dd5ca64fa051476e84112c2df5a6.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+You can use the <code class="cod">-P</code> <a href="command-line">command-line</a> option to specify the pragma:
+<p></p>
+<p>
+<code></code></p><pre class="colo"><code>java -jar plantuml.jar -PuseVerticalIf=on
+</code></pre>
+<p>
+</p><p></p>
+<em>[Refs. <a href="https://forum.plantuml.net/3931/please-provide-elseif-structure-vertically-activity-diagrams">QA-3931</a>, <a href="https://github.com/plantuml/plantuml/issues/582">GH-582</a>]</em>
+<a style="position:relative;top:-38px;" name="537b5a761669087b"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#4"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#4"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#4"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Switch and case [switch, case, endswitch]</h2>
+<p></p>
+You can use <code class="cod">switch</code>, <code class="cod">case</code> and <code class="cod">endswitch</code> keywords to put switch in your diagram.
+<p></p>
+Labels can be provided using parentheses.
+<p></p>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg6bf09a825f6bbb99f75bca46314f8391" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img6bf09a825f6bbb99f75bca46314f8391" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('6bf09a825f6bbb99f75bca46314f8391')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('6bf09a825f6bbb99f75bca46314f8391')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('6bf09a825f6bbb99f75bca46314f8391')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre6bf09a825f6bbb99f75bca46314f8391">@startuml
+start
+switch (test?)
+case ( condition A )
+  :Text 1;
+case ( condition B ) 
+  :Text 2;
+case ( condition C )
+  :Text 3;
+case ( condition D )
+  :Text 4;
+case ( condition E )
+  :Text 5;
+endswitch
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="499" height="242" class="scale" src="/imgw/img-6bf09a825f6bbb99f75bca46314f8391.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="d7b1027a512b4d7b"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#5"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#5"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#5"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Conditional with stop on an action [kill, detach]</h2>
+<p></p>
+You can stop action on a if loop.
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgc8e5278d5e5017987da49de95009e85f" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgc8e5278d5e5017987da49de95009e85f" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('c8e5278d5e5017987da49de95009e85f')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('c8e5278d5e5017987da49de95009e85f')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('c8e5278d5e5017987da49de95009e85f')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prec8e5278d5e5017987da49de95009e85f">@startuml
+if (condition?) then
+  :error;
+  stop
+endif
+#palegreen:action;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="131" height="226" class="scale" src="/imgw/img-c8e5278d5e5017987da49de95009e85f.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+But if you want to stop at the precise action, you can use the <code class="cod">kill</code> or <code class="cod">detach</code> keyword:
+<p></p>
+<ul>
+<li><code class="cod">kill</code></li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg3e85f23c0e7d98c6fe6301b521de4e7a" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img3e85f23c0e7d98c6fe6301b521de4e7a" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('3e85f23c0e7d98c6fe6301b521de4e7a')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('3e85f23c0e7d98c6fe6301b521de4e7a')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('3e85f23c0e7d98c6fe6301b521de4e7a')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre3e85f23c0e7d98c6fe6301b521de4e7a">@startuml
+if (condition?) then
+  #pink:error;
+  kill
+endif
+#palegreen:action;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="131" height="176" class="scale" src="/imgw/img-3e85f23c0e7d98c6fe6301b521de4e7a.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/265/new-activity-diagram-syntax-direction-of-links?show=306#a306">QA-265</a>]</em>
+<p></p>
+<ul>
+<li><code class="cod">detach</code></li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg267d354a9819c51e62ced1d13d359c0e" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img267d354a9819c51e62ced1d13d359c0e" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('267d354a9819c51e62ced1d13d359c0e')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('267d354a9819c51e62ced1d13d359c0e')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('267d354a9819c51e62ced1d13d359c0e')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre267d354a9819c51e62ced1d13d359c0e">@startuml
+if (condition?) then
+  #pink:error;
+  detach
+endif
+#palegreen:action;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="131" height="176" class="scale" src="/imgw/img-267d354a9819c51e62ced1d13d359c0e.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="219cebcef334f265"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#6"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#6"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#6"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Repeat loop</h2>
+<p></p>
+<h3>Simple repeat loop</h3>
+<p></p>
+You can use <code class="cod">repeat</code> and <code class="cod">repeat while</code> keywords to have repeat loops.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg4dd5e621a0b2f9a73622c880422cd1e8" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img4dd5e621a0b2f9a73622c880422cd1e8" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('4dd5e621a0b2f9a73622c880422cd1e8')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('4dd5e621a0b2f9a73622c880422cd1e8')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('4dd5e621a0b2f9a73622c880422cd1e8')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre4dd5e621a0b2f9a73622c880422cd1e8">@startuml
+
+start
+
+repeat
+  :read data;
+  :generate diagrams;
+repeat while (more data?) is (yes) not (no)
+
+stop
+
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="168" height="300" class="scale" src="/imgw/img-4dd5e621a0b2f9a73622c880422cd1e8.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3>Repeat loop with repeat action and backward action</h3>
+<p></p>
+It is also possible to use a full action as <code class="cod">repeat</code> target and insert an action in the return path using the <code class="cod">backward</code> keyword.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg1576ca26e14ca0939c301f0bb7a70622" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img1576ca26e14ca0939c301f0bb7a70622" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('1576ca26e14ca0939c301f0bb7a70622')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('1576ca26e14ca0939c301f0bb7a70622')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('1576ca26e14ca0939c301f0bb7a70622')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre1576ca26e14ca0939c301f0bb7a70622">@startuml
+
+start
+
+repeat :foo as starting label;
+  :read data;
+  :generate diagrams;
+backward:This is backward;
+repeat while (more data?) is (yes)
+-&gt;no;
+
+stop
+
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="274" height="328" class="scale" src="/imgw/img-1576ca26e14ca0939c301f0bb7a70622.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<em>[Ref. <a href="https://forum.plantuml.net/5826/please-provide-action-repeat-loop-start-instead-condition?show=5831#a5831">QA-5826</a>]</em>
+<a style="position:relative;top:-38px;" name="76b6256d62540b9f"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#7"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#7"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#7"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Break on a repeat loop [break]</h2>
+<p></p>
+You can use the <code class="cod">break</code> keyword after an action on a loop.
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg9aa8f11b4ea9569dbc3b6df4fbc85499" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img9aa8f11b4ea9569dbc3b6df4fbc85499" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('9aa8f11b4ea9569dbc3b6df4fbc85499')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('9aa8f11b4ea9569dbc3b6df4fbc85499')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('9aa8f11b4ea9569dbc3b6df4fbc85499')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre9aa8f11b4ea9569dbc3b6df4fbc85499">@startuml
+start
+repeat
+  :Test something;
+    if (Something went wrong?) then (no)
+      #palegreen:OK;
+      break
+    endif
+    -&gt;NOK;
+    :Alert "Error with long text";
+repeat while (Something went wrong with long text?) is (yes) not (no)
+-&gt;//merged step//;
+:Alert "Success";
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="266" height="570" class="scale" src="/imgw/img-9aa8f11b4ea9569dbc3b6df4fbc85499.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/6105/possible-to-draw-a-line-to-another-box-via-id-or-label?show=6107#a6107">QA-6105</a>]</em>
+<a style="position:relative;top:-38px;" name="2f8a92e645aba14f"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#8"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#8"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#8"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Goto and Label Processing [label, goto]</h2>
+<p></p>
+⚠ It is currently only experimental 🚧
+<p></p>
+You can use <code class="cod">label</code> and <code class="cod">goto</code> keywords to denote goto processing, with:
+<ul>
+<li><code class="cod">label &lt;label_name&gt;</code></li>
+<li><code class="cod">goto &lt;label_name&gt;</code></li>
+</ul>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgbbb52b4e69bff5330892cfdd0faf09ec" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgbbb52b4e69bff5330892cfdd0faf09ec" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('bbb52b4e69bff5330892cfdd0faf09ec')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('bbb52b4e69bff5330892cfdd0faf09ec')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('bbb52b4e69bff5330892cfdd0faf09ec')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prebbb52b4e69bff5330892cfdd0faf09ec">@startuml
+title Point two queries to same activity\nwith `goto`
+start
+if (Test Question?) then (yes)
+'space label only for alignment
+label sp_lab0
+label sp_lab1
+'real label
+label lab
+:shared;
+else (no)
+if (Second Test Question?) then (yes)
+label sp_lab2
+goto sp_lab1
+else
+:nonShared;
+endif
+endif
+:merge;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="321" height="362" class="scale" src="/imgw/img-bbb52b4e69bff5330892cfdd0faf09ec.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/15026/">QA-15026</a>, <a href="https://forum.plantuml.net/12526/">QA-12526</a> and initially <a href="https://forum.plantuml.net/1626">QA-1626</a>]</em>
+<a style="position:relative;top:-38px;" name="04a96ae1910f3c8a"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#9"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#9"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#9"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>While loop</h2>
+<p></p>
+<h3>Simple while loop</h3>
+<p></p>
+You can use <code class="cod">while</code> and <code class="cod">endwhile</code> keywords to have while loop.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg545887a19c56c5c637fc6c74523b0aab" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img545887a19c56c5c637fc6c74523b0aab" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('545887a19c56c5c637fc6c74523b0aab')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('545887a19c56c5c637fc6c74523b0aab')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('545887a19c56c5c637fc6c74523b0aab')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre545887a19c56c5c637fc6c74523b0aab">@startuml
+
+start
+
+while (data available?)
+  :read data;
+  :generate diagrams;
+endwhile
+
+stop
+
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="202" height="232" class="scale" src="/imgw/img-545887a19c56c5c637fc6c74523b0aab.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+It is possible to provide a label after the <code class="cod">endwhile</code> keyword, or using the <code class="cod">is</code> keyword.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg870f4a71d599b7a8811e146b16ca0b47" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img870f4a71d599b7a8811e146b16ca0b47" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('870f4a71d599b7a8811e146b16ca0b47')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('870f4a71d599b7a8811e146b16ca0b47')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('870f4a71d599b7a8811e146b16ca0b47')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre870f4a71d599b7a8811e146b16ca0b47">@startuml
+while (check filesize ?) is (not empty)
+  :read file;
+endwhile (empty)
+:close file;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="175" height="191" class="scale" src="/imgw/img-870f4a71d599b7a8811e146b16ca0b47.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3>While loop with backward action</h3>
+It is also possible to insert an action in the return path using the <code class="cod">backward</code> keyword.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg11dd8b1465d365e47b0cdd2898a788da" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img11dd8b1465d365e47b0cdd2898a788da" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('11dd8b1465d365e47b0cdd2898a788da')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('11dd8b1465d365e47b0cdd2898a788da')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('11dd8b1465d365e47b0cdd2898a788da')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre11dd8b1465d365e47b0cdd2898a788da">@startuml
+while (check filesize ?) is (not empty)
+  :read file;
+  backward:log;
+endwhile (empty)
+:close file;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="196" height="196" class="scale" src="/imgw/img-11dd8b1465d365e47b0cdd2898a788da.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/11144/backward-for-while-endwhile">QA-11144</a>]</em>
+<p></p>
+<p></p>
+<h3>Infinite while loop</h3>
+<p></p>
+If you are using <code class="cod">detach</code> to form an infinite while loop, then you will want to also hide the partial arrow that results using <code class="cod">-[hidden]-&gt;</code>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg24fb0f4737168a9a985a6fcb0abd146d" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img24fb0f4737168a9a985a6fcb0abd146d" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('24fb0f4737168a9a985a6fcb0abd146d')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('24fb0f4737168a9a985a6fcb0abd146d')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('24fb0f4737168a9a985a6fcb0abd146d')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre24fb0f4737168a9a985a6fcb0abd146d">@startuml
+:Step 1;
+if (condition1) then
+  while (loop forever)
+   :Step 2;
+  endwhile
+  -[hidden]-&gt;
+  detach
+else
+  :end normally;
+  stop
+endif
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="232" height="218" class="scale" src="/imgw/img-24fb0f4737168a9a985a6fcb0abd146d.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="7452578bfebedd2d"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#10"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#10"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#10"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Parallel processing [fork, fork again, end fork, end merge]</h2>
+<p></p>
+You can use <code class="cod">fork</code>, <code class="cod">fork again</code> and <code class="cod">end fork</code> or <code class="cod">end merge</code> keywords to denote parallel processing.
+<p></p>
+<h3>Simple <code class="cod">fork</code></h3>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgd3cc128f6b2d3a8e22ffbd8d0c26a50b" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgd3cc128f6b2d3a8e22ffbd8d0c26a50b" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('d3cc128f6b2d3a8e22ffbd8d0c26a50b')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('d3cc128f6b2d3a8e22ffbd8d0c26a50b')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('d3cc128f6b2d3a8e22ffbd8d0c26a50b')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pred3cc128f6b2d3a8e22ffbd8d0c26a50b">@startuml
+start
+fork
+  :action 1;
+fork again
+  :action 2;
+end fork
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="197" height="189" class="scale" src="/imgw/img-d3cc128f6b2d3a8e22ffbd8d0c26a50b.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3><code class="cod">fork</code> with end merge</h3>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg0814307efe8fbba6381003912afcc4c7" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img0814307efe8fbba6381003912afcc4c7" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('0814307efe8fbba6381003912afcc4c7')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('0814307efe8fbba6381003912afcc4c7')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('0814307efe8fbba6381003912afcc4c7')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre0814307efe8fbba6381003912afcc4c7">@startuml
+start
+fork
+  :action 1;
+fork again
+  :action 2;
+end merge
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="197" height="197" class="scale" src="/imgw/img-0814307efe8fbba6381003912afcc4c7.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<em>[Ref. <a href="https://forum.plantuml.net/5320/please-provide-fork-without-join-with-merge-activity-diagrams?show=5321#a5321">QA-5320</a>]</em>
+</p><p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg953119150b808ecaa82b9f227f493658" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img953119150b808ecaa82b9f227f493658" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('953119150b808ecaa82b9f227f493658')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('953119150b808ecaa82b9f227f493658')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('953119150b808ecaa82b9f227f493658')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre953119150b808ecaa82b9f227f493658">@startuml
+start
+fork
+  :action 1;
+fork again
+  :action 2;
+fork again
+  :action 3;
+fork again
+  :action 4;
+end merge
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="341" height="197" class="scale" src="/imgw/img-953119150b808ecaa82b9f227f493658.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg9d47cd3b4dcdde1feab97a43c020ea8a" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img9d47cd3b4dcdde1feab97a43c020ea8a" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('9d47cd3b4dcdde1feab97a43c020ea8a')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('9d47cd3b4dcdde1feab97a43c020ea8a')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('9d47cd3b4dcdde1feab97a43c020ea8a')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre9d47cd3b4dcdde1feab97a43c020ea8a">@startuml
+start
+fork
+  :action 1;
+fork again
+  :action 2;
+  end
+end merge
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="197" height="252" class="scale" src="/imgw/img-9d47cd3b4dcdde1feab97a43c020ea8a.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/13731">QA-13731</a>]</em>
+<p></p>
+<h3>Label on <code class="cod">end fork</code> (or UML joinspec):</h3>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgae850b8d8c5c97bd1df1ee6019896acc" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgae850b8d8c5c97bd1df1ee6019896acc" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('ae850b8d8c5c97bd1df1ee6019896acc')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('ae850b8d8c5c97bd1df1ee6019896acc')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('ae850b8d8c5c97bd1df1ee6019896acc')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="preae850b8d8c5c97bd1df1ee6019896acc">@startuml
+start
+fork
+  :action A;
+fork again
+  :action B;
+end fork {or}
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="222" height="189" class="scale" src="/imgw/img-ae850b8d8c5c97bd1df1ee6019896acc.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg8a752298b294c841a26f8623b83f6cec" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img8a752298b294c841a26f8623b83f6cec" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('8a752298b294c841a26f8623b83f6cec')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('8a752298b294c841a26f8623b83f6cec')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('8a752298b294c841a26f8623b83f6cec')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre8a752298b294c841a26f8623b83f6cec">@startuml
+start
+fork
+  :action A;
+fork again
+  :action B;
+end fork {and}
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="231" height="189" class="scale" src="/imgw/img-8a752298b294c841a26f8623b83f6cec.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/5346/please-inplement-joinspec-for-join-nodes?show=5348#a5348">QA-5346</a>]</em>
+<p></p>
+<h3>Other example</h3>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg1312133b9200d7e8c8a80171807dd642" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img1312133b9200d7e8c8a80171807dd642" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('1312133b9200d7e8c8a80171807dd642')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('1312133b9200d7e8c8a80171807dd642')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('1312133b9200d7e8c8a80171807dd642')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre1312133b9200d7e8c8a80171807dd642">@startuml
+
+start
+
+if (multiprocessor?) then (yes)
+  fork
+    :Treatment 1;
+  fork again
+    :Treatment 2;
+  end fork
+else (monoproc)
+  :Treatment 1;
+  :Treatment 2;
+endif
+
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="349" height="230" class="scale" src="/imgw/img-1312133b9200d7e8c8a80171807dd642.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="39d488a91ed5c8d2"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#11"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#11"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#11"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Split processing</h2>
+<p></p>
+<h3>Split</h3>
+You can use <code class="cod">split</code>, <code class="cod">split again</code> and <code class="cod">end split</code> keywords to denote split processing.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msge7c11bf2cc72d0b107678fce0fa6e112" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imge7c11bf2cc72d0b107678fce0fa6e112" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('e7c11bf2cc72d0b107678fce0fa6e112')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('e7c11bf2cc72d0b107678fce0fa6e112')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('e7c11bf2cc72d0b107678fce0fa6e112')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pree7c11bf2cc72d0b107678fce0fa6e112">@startuml
+start
+split
+   :A;
+split again
+   :B;
+split again
+   :C;
+split again
+   :a;
+   :b;
+end split
+:D;
+end
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="182" height="300" class="scale" src="/imgw/img-e7c11bf2cc72d0b107678fce0fa6e112.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3>Input split (multi-start)</h3>
+You can use <code class="cod">hidden</code> arrows to make an input split (multi-start):
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg5a83d7ab14ef8f3ef1e54d5818593bdf" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img5a83d7ab14ef8f3ef1e54d5818593bdf" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('5a83d7ab14ef8f3ef1e54d5818593bdf')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('5a83d7ab14ef8f3ef1e54d5818593bdf')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('5a83d7ab14ef8f3ef1e54d5818593bdf')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre5a83d7ab14ef8f3ef1e54d5818593bdf">@startuml
+split
+   -[hidden]-&gt;
+   :A;
+split again
+   -[hidden]-&gt;
+   :B;
+split again
+   -[hidden]-&gt;
+   :C;
+end split
+:D;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="127" height="151" class="scale" src="/imgw/img-5a83d7ab14ef8f3ef1e54d5818593bdf.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgc01d78b9448346fd487e966858664ecb" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgc01d78b9448346fd487e966858664ecb" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('c01d78b9448346fd487e966858664ecb')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('c01d78b9448346fd487e966858664ecb')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('c01d78b9448346fd487e966858664ecb')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prec01d78b9448346fd487e966858664ecb">@startuml
+split
+   -[hidden]-&gt;
+   :A;
+split again
+   -[hidden]-&gt;
+   :a;
+   :b;
+split again
+   -[hidden]-&gt;
+   (Z)
+end split
+:D;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="125" height="221" class="scale" src="/imgw/img-c01d78b9448346fd487e966858664ecb.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<em>[Ref. <a href="https://forum.plantuml.net/8662">QA-8662</a>]</em>
+</p><p></p>
+<h3>Output split (multi-end)</h3>
+<p></p>
+You can use <code class="cod">kill</code> or <code class="cod">detach</code> to make an output split (multi-end):
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg35e08ac3bd8d1d1657d33200315c32a5" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img35e08ac3bd8d1d1657d33200315c32a5" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('35e08ac3bd8d1d1657d33200315c32a5')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('35e08ac3bd8d1d1657d33200315c32a5')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('35e08ac3bd8d1d1657d33200315c32a5')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre35e08ac3bd8d1d1657d33200315c32a5">@startuml
+start
+split
+   :A;
+   kill
+split again
+   :B;
+   detach
+split again
+   :C;
+   kill
+end split
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="126" height="115" class="scale" src="/imgw/img-35e08ac3bd8d1d1657d33200315c32a5.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msga3e7b2a58497973c767294e3587b044c" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imga3e7b2a58497973c767294e3587b044c" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('a3e7b2a58497973c767294e3587b044c')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('a3e7b2a58497973c767294e3587b044c')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('a3e7b2a58497973c767294e3587b044c')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prea3e7b2a58497973c767294e3587b044c">@startuml
+start
+split
+   :A;
+   kill
+split again
+   :b;
+   :c;
+   detach
+split again
+   (Z)
+   detach
+split again
+   end
+split again
+   stop
+end split
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="188" height="185" class="scale" src="/imgw/img-a3e7b2a58497973c767294e3587b044c.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="f4c6f851b00d5518"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#12"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#12"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#12"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Notes</h2>
+<p></p>
+Text formatting can be done using <a href="creole">creole wiki syntax</a>.
+<p></p>
+A note can be floating, using  <code class="cod">floating</code> keyword.
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msga53d68ee807eaab5c50fcbc1cb691057" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imga53d68ee807eaab5c50fcbc1cb691057" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('a53d68ee807eaab5c50fcbc1cb691057')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('a53d68ee807eaab5c50fcbc1cb691057')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('a53d68ee807eaab5c50fcbc1cb691057')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prea53d68ee807eaab5c50fcbc1cb691057">@startuml
+
+start
+:foo1;
+floating note left: This is a note
+:foo2;
+note right
+  This note is on several
+  //lines// and can
+  contain &lt;b&gt;HTML&lt;/b&gt;
+  ====
+  * Calling the method ""foo()"" is prohibited
+end note
+stop
+
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="450" height="233" class="scale" src="/imgw/img-a53d68ee807eaab5c50fcbc1cb691057.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+You can add note on backward activity:
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg976dcb18229836e0e8983769e3c74d60" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img976dcb18229836e0e8983769e3c74d60" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('976dcb18229836e0e8983769e3c74d60')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('976dcb18229836e0e8983769e3c74d60')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('976dcb18229836e0e8983769e3c74d60')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre976dcb18229836e0e8983769e3c74d60">@startuml
+start
+repeat :Enter data;
+:Submit;
+backward :Warning;
+note right: Note
+repeat while (Valid?) is (No) not (Yes)
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="250" height="253" class="scale" src="/imgw/img-976dcb18229836e0e8983769e3c74d60.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/11788/is-it-possible-to-add-a-note-to-backward-activity?show=11802#a11802">QA-11788</a>]</em>
+<p></p>
+<p></p>
+You can add note on partition activity:
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg76d329fe713ff553654f58bc014c1c74" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img76d329fe713ff553654f58bc014c1c74" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('76d329fe713ff553654f58bc014c1c74')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('76d329fe713ff553654f58bc014c1c74')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('76d329fe713ff553654f58bc014c1c74')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre76d329fe713ff553654f58bc014c1c74">@startuml
+start
+partition "**process** HelloWorld" {
+    note
+        This is my note
+        ----
+        //Creole test//
+    end note
+    :Ready;
+    :HelloWorld(i)&gt;
+    :Hello-Sent;
+}
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="269" height="268" class="scale" src="/imgw/img-76d329fe713ff553654f58bc014c1c74.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<em>[Ref. <a href="https://forum.plantuml.net/2398/is-it-possible-to-add-a-comment-on-top-of-a-activity-partition?show=2403#a2403">QA-2398</a>]</em>
+<a style="position:relative;top:-38px;" name="5d50889672f6f860"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#13"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#13"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#13"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Colors</h2>
+<p></p>
+You can specify a <a href="color">color</a> for some activities.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg7a9f64747f1555cd8165a047aacffa17" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img7a9f64747f1555cd8165a047aacffa17" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('7a9f64747f1555cd8165a047aacffa17')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('7a9f64747f1555cd8165a047aacffa17')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('7a9f64747f1555cd8165a047aacffa17')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre7a9f64747f1555cd8165a047aacffa17">@startuml
+
+start
+:starting progress;
+#HotPink:reading configuration files
+These files should be edited at this point!;
+#AAAAAA:ending of the process;
+
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="258" height="220" class="scale" src="/imgw/img-7a9f64747f1555cd8165a047aacffa17.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+You can also use <a href="color">gradient color</a>.
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg62b7b99206585ef7a1ef864c009ed261" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img62b7b99206585ef7a1ef864c009ed261" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('62b7b99206585ef7a1ef864c009ed261')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('62b7b99206585ef7a1ef864c009ed261')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('62b7b99206585ef7a1ef864c009ed261')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre62b7b99206585ef7a1ef864c009ed261">@startuml
+start
+partition #red/white testPartition {
+        #blue\green:testActivity;
+}
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="118" height="135" class="scale" src="/imgw/img-62b7b99206585ef7a1ef864c009ed261.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<em>[Ref. <a href="https://forum.plantuml.net/4906/setting-ad-hoc-gradient-backgrounds-in-activity?show=4917#a4917">QA-4906</a>]</em>
+<a style="position:relative;top:-38px;" name="6299b1bc9965f62f"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#14"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#14"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#14"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Lines without arrows</h2>
+<p></p>
+You can use <code class="cod">skinparam ArrowHeadColor none</code> in order to connect activities using lines only, without arrows.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg8ec78f64829b774f7273b7ca0a3ee8e1" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img8ec78f64829b774f7273b7ca0a3ee8e1" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('8ec78f64829b774f7273b7ca0a3ee8e1')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('8ec78f64829b774f7273b7ca0a3ee8e1')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('8ec78f64829b774f7273b7ca0a3ee8e1')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre8ec78f64829b774f7273b7ca0a3ee8e1">@startuml
+skinparam ArrowHeadColor none
+start
+:Hello world;
+:This is on defined on
+several **lines**;
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="151" height="207" class="scale" src="/imgw/img-8ec78f64829b774f7273b7ca0a3ee8e1.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg69134354accece87651c6a8b1db64387" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img69134354accece87651c6a8b1db64387" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('69134354accece87651c6a8b1db64387')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('69134354accece87651c6a8b1db64387')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('69134354accece87651c6a8b1db64387')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre69134354accece87651c6a8b1db64387">@startuml
+skinparam ArrowHeadColor none
+start
+repeat :Enter data;
+:Submit;
+backward :Warning;
+repeat while (Valid?) is (No) not (Yes)
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="181" height="253" class="scale" src="/imgw/img-69134354accece87651c6a8b1db64387.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="4e05974b02cc4aa9"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#15"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#15"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#15"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Arrows</h2>
+<p></p>
+Using the <code class="cod">-&gt;</code> notation, you can add texts to arrow, and change
+their <a href="color">color</a>.
+<p></p>
+It's also possible to have dotted, dashed, bold or hidden arrows.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg8eed5a178e4b17c8334a92bc4c01a5f0" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img8eed5a178e4b17c8334a92bc4c01a5f0" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('8eed5a178e4b17c8334a92bc4c01a5f0')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('8eed5a178e4b17c8334a92bc4c01a5f0')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('8eed5a178e4b17c8334a92bc4c01a5f0')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre8eed5a178e4b17c8334a92bc4c01a5f0">@startuml
+:foo1;
+-&gt; You can put text on arrows;
+if (test) then
+  -[#blue]-&gt;
+  :foo2;
+  -[#green,dashed]-&gt; The text can
+  also be on several lines
+  and **very** long...;
+  :foo3;
+else
+  -[#black,dotted]-&gt;
+  :foo4;
+endif
+-[#gray,bold]-&gt;
+:foo5;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="258" height="357" class="scale" src="/imgw/img-8eed5a178e4b17c8334a92bc4c01a5f0.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<a style="position:relative;top:-38px;" name="edf21d7ecb364e82"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#16"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#16"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#16"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Connector</h2>
+<p></p>
+You can use parentheses to denote connector.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg5ce8397b3e7521d0b35e0fbcdd585e75" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img5ce8397b3e7521d0b35e0fbcdd585e75" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('5ce8397b3e7521d0b35e0fbcdd585e75')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('5ce8397b3e7521d0b35e0fbcdd585e75')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('5ce8397b3e7521d0b35e0fbcdd585e75')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre5ce8397b3e7521d0b35e0fbcdd585e75">@startuml
+start
+:Some activity;
+(A)
+detach
+(A)
+:Other activity;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="112" height="220" class="scale" src="/imgw/img-5ce8397b3e7521d0b35e0fbcdd585e75.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<a style="position:relative;top:-38px;" name="2f8c97b04c4fc1f5"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#17"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#17"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#17"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Color on connector</h2>
+<p></p>
+You can add <a href="color">color</a> on connector.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg7bf190454fb167cd55c01cef72f3d7d7" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img7bf190454fb167cd55c01cef72f3d7d7" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('7bf190454fb167cd55c01cef72f3d7d7')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('7bf190454fb167cd55c01cef72f3d7d7')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('7bf190454fb167cd55c01cef72f3d7d7')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre7bf190454fb167cd55c01cef72f3d7d7">@startuml
+start
+:The connector below
+wishes he was blue;
+#blue:(B)
+:This next connector
+feels that she would
+be better off green;
+#green:(G)
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="152" height="317" class="scale" src="/imgw/img-7bf190454fb167cd55c01cef72f3d7d7.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/10077/assigning-color-to-connectors?show=10080#c10080">QA-10077</a>]</em>
+<a style="position:relative;top:-38px;" name="772273da3919bcd1"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#18"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#18"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#18"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Grouping or partition</h2>
+<p></p>
+<h3>Group</h3>
+You can group activity together by defining group:
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg5fb61ce434ee448e5e2f8862922bff20" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img5fb61ce434ee448e5e2f8862922bff20" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('5fb61ce434ee448e5e2f8862922bff20')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('5fb61ce434ee448e5e2f8862922bff20')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('5fb61ce434ee448e5e2f8862922bff20')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre5fb61ce434ee448e5e2f8862922bff20">@startuml
+start
+group Initialization 
+    :read config file;
+    :init internal variable;
+end group
+group Running group
+    :wait for user interaction;
+    :print information;
+end group
+
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="185" height="381" class="scale" src="/imgw/img-5fb61ce434ee448e5e2f8862922bff20.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3>Partition</h3>
+You can group activity together by defining partition:
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg8de65218f18dc45e2de38acf3fc26cbd" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img8de65218f18dc45e2de38acf3fc26cbd" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('8de65218f18dc45e2de38acf3fc26cbd')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('8de65218f18dc45e2de38acf3fc26cbd')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('8de65218f18dc45e2de38acf3fc26cbd')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre8de65218f18dc45e2de38acf3fc26cbd">@startuml
+start
+partition Initialization {
+    :read config file;
+    :init internal variable;
+}
+partition Running {
+    :wait for user interaction;
+    :print information;
+}
+
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="185" height="381" class="scale" src="/imgw/img-8de65218f18dc45e2de38acf3fc26cbd.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p></p>
+It's also possible to change partition <a href="color">color</a>:
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg7fa16a1e840cabd83ede9f97d5388fe9" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img7fa16a1e840cabd83ede9f97d5388fe9" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('7fa16a1e840cabd83ede9f97d5388fe9')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('7fa16a1e840cabd83ede9f97d5388fe9')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('7fa16a1e840cabd83ede9f97d5388fe9')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre7fa16a1e840cabd83ede9f97d5388fe9">@startuml
+start
+partition #lightGreen "Input Interface" {
+    :read config file;
+    :init internal variable;
+}
+partition Running {
+    :wait for user interaction;
+    :print information;
+}
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="185" height="381" class="scale" src="/imgw/img-7fa16a1e840cabd83ede9f97d5388fe9.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/2793/activity-beta-partition-name-more-than-one-word-does-not-work?show=2798#a2798">QA-2793</a>]</em>
+<p></p>
+It's also possible to add <a href="link">link</a> to partition:
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg6820a84e68521a2af0c8b4b513089be5" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img6820a84e68521a2af0c8b4b513089be5" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('6820a84e68521a2af0c8b4b513089be5')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('6820a84e68521a2af0c8b4b513089be5')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('6820a84e68521a2af0c8b4b513089be5')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre6820a84e68521a2af0c8b4b513089be5">@startuml
+start
+partition "[[http://plantuml.com partition_name]]" {
+    :read doc. on [[http://plantuml.com plantuml_website]];
+    :test diagram;
+}
+end
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="223" height="229" class="scale" src="/imgw/img-6820a84e68521a2af0c8b4b513089be5.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<em>[Ref. <a href="https://forum.plantuml.net/542/ability-to-define-hyperlink-on-diagram-elements?show=14003#c14003">QA-542</a>]</em>
+</p><p></p>
+<h3>Group, Partition, Package, Rectangle or Card</h3>
+You can group activity together by defining:
+<ul>
+<li>group;</li>
+<li>partition;</li>
+<li>package;</li>
+<li>rectangle;</li>
+<li>card.</li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgdfcf6dd9e8fb6e389e141003482b96fe" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgdfcf6dd9e8fb6e389e141003482b96fe" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('dfcf6dd9e8fb6e389e141003482b96fe')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('dfcf6dd9e8fb6e389e141003482b96fe')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('dfcf6dd9e8fb6e389e141003482b96fe')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="predfcf6dd9e8fb6e389e141003482b96fe">@startuml
+start
+group Group
+  :Activity;
+end group
+floating note: Note on Group
+
+partition Partition {
+  :Activity;
+}
+floating note: Note on Partition
+
+package Package {
+  :Activity;
+}
+floating note: Note on Package 
+
+rectangle Rectangle {
+  :Activity;
+}
+floating note: Note on Rectangle 
+
+card Card {
+  :Activity;
+}
+floating note: Note on Card
+end
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="259" height="577" class="scale" src="/imgw/img-dfcf6dd9e8fb6e389e141003482b96fe.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="dadd115c61036c7a"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#19"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#19"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#19"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Swimlanes</h2>
+<p></p>
+Using pipe <code class="cod">|</code>, you can define swimlanes.
+<p></p>
+It's also possible to change swimlanes <a href="color">color</a>.
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg4a73b5b117bc14d5ed65e674fd0f322f" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img4a73b5b117bc14d5ed65e674fd0f322f" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('4a73b5b117bc14d5ed65e674fd0f322f')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('4a73b5b117bc14d5ed65e674fd0f322f')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('4a73b5b117bc14d5ed65e674fd0f322f')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre4a73b5b117bc14d5ed65e674fd0f322f">@startuml
+|Swimlane1|
+start
+:foo1;
+|#AntiqueWhite|Swimlane2|
+:foo2;
+:foo3;
+|Swimlane1|
+:foo4;
+|Swimlane2|
+:foo5;
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="229" height="388" class="scale" src="/imgw/img-4a73b5b117bc14d5ed65e674fd0f322f.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+You can add <code class="cod">if</code> conditional  or  <code class="cod">repeat</code> or <code class="cod">while</code> loop within swimlanes.
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg8f7521283ef87c0f446bc1f768c4711d" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img8f7521283ef87c0f446bc1f768c4711d" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('8f7521283ef87c0f446bc1f768c4711d')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('8f7521283ef87c0f446bc1f768c4711d')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('8f7521283ef87c0f446bc1f768c4711d')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre8f7521283ef87c0f446bc1f768c4711d">@startuml
+|#pink|Actor_For_red|
+start
+if (color?) is (red) then
+#pink:**action red**;
+:foo1;
+else (not red)
+|#lightgray|Actor_For_no_red|
+#lightgray:**action not red**;
+:foo2;
+endif
+|Next_Actor|
+#lightblue:foo3;
+:foo4;
+|Final_Actor|
+#palegreen:foo5;
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="553" height="466" class="scale" src="/imgw/img-8f7521283ef87c0f446bc1f768c4711d.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+You can also use <code class="cod">alias</code> with swimlanes, with this syntax:
+<ul>
+<li><code class="cod">|[#&lt;color&gt;|]&lt;swimlane_alias&gt;| &lt;swimlane_title&gt;</code></li>
+</ul>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg062578aa48c546ba495336b837529182" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img062578aa48c546ba495336b837529182" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('062578aa48c546ba495336b837529182')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('062578aa48c546ba495336b837529182')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('062578aa48c546ba495336b837529182')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre062578aa48c546ba495336b837529182">@startuml
+|#palegreen|f| fisherman
+|c| cook
+|#gold|e| eater
+|f|
+start
+:go fish;
+|c|
+:fry fish;
+|e|
+:eat fish;
+stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="261" height="278" class="scale" src="/imgw/img-062578aa48c546ba495336b837529182.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/2681/possible-define-alias-swimlane-place-alias-everywhere-else?show=2685#a2685">QA-2681</a>]</em>
+<a style="position:relative;top:-38px;" name="d02f7ddcfafa91da"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#20"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#20"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#20"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Detach or kill [detach, kill]</h2>
+<p></p>
+It's possible to remove an arrow using the <code class="cod">detach</code> or <code class="cod">kill</code> keyword:
+<p></p>
+<ul>
+<li><code class="cod">detach</code></li>
+</ul>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgbdce70957b6247e06af9f94d86fc3880" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgbdce70957b6247e06af9f94d86fc3880" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('bdce70957b6247e06af9f94d86fc3880')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('bdce70957b6247e06af9f94d86fc3880')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('bdce70957b6247e06af9f94d86fc3880')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prebdce70957b6247e06af9f94d86fc3880">@startuml
+ :start;
+ fork
+   :foo1;
+   :foo2;
+ fork again
+   :foo3;
+   detach
+ endfork
+ if (foo4) then
+   :foo5;
+   detach
+ endif
+ :foo6;
+ detach
+ :foo7;
+ stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="159" height="496" class="scale" src="/imgw/img-bdce70957b6247e06af9f94d86fc3880.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<ul>
+<li><code class="cod">kill</code></li>
+</ul>
+<p></p>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg1d7365429504c1c7c5763b0fddc085c6" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img1d7365429504c1c7c5763b0fddc085c6" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('1d7365429504c1c7c5763b0fddc085c6')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('1d7365429504c1c7c5763b0fddc085c6')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('1d7365429504c1c7c5763b0fddc085c6')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre1d7365429504c1c7c5763b0fddc085c6">@startuml
+ :start;
+ fork
+   :foo1;
+   :foo2;
+ fork again
+   :foo3;
+   kill
+ endfork
+ if (foo4) then
+   :foo5;
+   kill
+ endif
+ :foo6;
+ kill
+ :foo7;
+ stop
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="159" height="496" class="scale" src="/imgw/img-1d7365429504c1c7c5763b0fddc085c6.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="7420c7766a064a28"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#21"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#21"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#21"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>SDL (Specification and Description Language)</h2>
+<p></p>
+<h3>Table of SDL Shape Name</h3>
+<p></p>
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody><tr>
+<td><b>
+Name
+</b></td>
+<td><b>
+Old syntax
+</b></td>
+<td><b>
+Stereotype syntax
+</b></td>
+</tr>
+<tr>
+<td>
+Input
+</td>
+<td>
+<code class="cod">&lt;</code>
+</td>
+<td>
+<code class="cod">&lt;&lt;input&gt;&gt;</code>
+</td>
+</tr>
+<tr>
+<td>
+Output
+</td>
+<td>
+<code class="cod">&gt;</code>
+</td>
+<td>
+<code class="cod">&lt;&lt;output&gt;&gt;</code>
+</td>
+</tr>
+<tr>
+<td>
+Procedure
+</td>
+<td>
+<code class="cod">|</code>
+</td>
+<td>
+<code class="cod">&lt;&lt;procedure&gt;&gt;</code>
+</td>
+</tr>
+<tr>
+<td>
+Load
+</td>
+<td>
+<code class="cod">\</code>
+</td>
+<td>
+<code class="cod">&lt;&lt;load&gt;&gt;</code>
+</td>
+</tr>
+<tr>
+<td>
+Save
+</td>
+<td>
+<code class="cod">/</code>
+</td>
+<td>
+<code class="cod">&lt;&lt;save&gt;&gt;</code>
+</td>
+</tr>
+<tr>
+<td>
+Continuous
+</td>
+<td>
+<code class="cod">}</code>
+</td>
+<td>
+<code class="cod">&lt;&lt;continuous&gt;&gt;</code>
+</td>
+</tr>
+<tr>
+<td>
+Task
+</td>
+<td>
+<code class="cod">]</code>
+</td>
+<td>
+<code class="cod">&lt;&lt;task&gt;&gt;</code>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/11518/issues-with-final-separator-latex-math-expression-activity?show=17268#a17268">QA-11518</a>, <a href="https://github.com/plantuml/plantuml/discussions/1270">GH-1270</a>]</em>
+<p></p>
+<h3>SDL using final separator (Deprecated form)</h3>
+By changing the final <code class="cod">;</code> separator, you can set different rendering for the activity:
+<ul>
+<li><code class="cod">|</code></li>
+<li><code class="cod">&lt;</code></li>
+<li><code class="cod">&gt;</code></li>
+<li><code class="cod">/</code></li>
+<li><code class="cod">\\</code></li>
+<li><code class="cod">]</code></li>
+<li><code class="cod">}</code></li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg90fc7f9d931c879a1deb8d801c99493a" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img90fc7f9d931c879a1deb8d801c99493a" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('90fc7f9d931c879a1deb8d801c99493a')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('90fc7f9d931c879a1deb8d801c99493a')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('90fc7f9d931c879a1deb8d801c99493a')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre90fc7f9d931c879a1deb8d801c99493a">@startuml
+:Ready;
+:next(o)|
+:Receiving;
+split
+ :nak(i)&lt;
+ :ack(o)&gt;
+split again
+ :ack(i)&lt;
+ :next(o)
+ on several lines|
+ :i := i + 1]
+ :ack(o)&gt;
+split again
+ :err(i)&lt;
+ :nak(o)&gt;
+split again
+ :foo/
+split again
+ :bar\\
+split again
+ :i &gt; 5}
+stop
+end split
+:finish;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="443" height="511" class="scale" src="/imgw/img-90fc7f9d931c879a1deb8d801c99493a.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3>SDL using Normal separator and Stereotype (Current offiial form)</h3>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg42d8d8b2944d0921c7abed70a2da9892" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img42d8d8b2944d0921c7abed70a2da9892" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('42d8d8b2944d0921c7abed70a2da9892')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('42d8d8b2944d0921c7abed70a2da9892')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('42d8d8b2944d0921c7abed70a2da9892')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre42d8d8b2944d0921c7abed70a2da9892">@startuml
+start
+:SDL Shape;
+:input; &lt;&lt;input&gt;&gt;
+:output; &lt;&lt;output&gt;&gt;
+:procedure; &lt;&lt;procedure&gt;&gt;
+:load; &lt;&lt;load&gt;&gt;
+:save; &lt;&lt;save&gt;&gt;
+:continuous; &lt;&lt;continuous&gt;&gt;
+:task; &lt;&lt;task&gt;&gt;
+end
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="109" height="520" class="scale" src="/imgw/img-42d8d8b2944d0921c7abed70a2da9892.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msga36c1d4fc88059d6f6eaea2dc5cd468a" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imga36c1d4fc88059d6f6eaea2dc5cd468a" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('a36c1d4fc88059d6f6eaea2dc5cd468a')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('a36c1d4fc88059d6f6eaea2dc5cd468a')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('a36c1d4fc88059d6f6eaea2dc5cd468a')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prea36c1d4fc88059d6f6eaea2dc5cd468a">@startuml
+:Ready;
+:next(o); &lt;&lt;procedure&gt;&gt;
+:Receiving;
+split
+ :nak(i); &lt;&lt;input&gt;&gt;
+ :ack(o); &lt;&lt;output&gt;&gt;
+split again
+ :ack(i); &lt;&lt;input&gt;&gt;
+ :next(o)
+ on several lines; &lt;&lt;procedure&gt;&gt;
+ :i := i + 1; &lt;&lt;task&gt;&gt;
+ :ack(o); &lt;&lt;output&gt;&gt;
+split again
+ :err(i); &lt;&lt;input&gt;&gt;
+ :nak(o); &lt;&lt;output&gt;&gt;
+split again
+ :foo; &lt;&lt;save&gt;&gt;
+split again
+ :bar; &lt;&lt;load&gt;&gt;
+split again
+ :i &gt; 5; &lt;&lt;continuous&gt;&gt;
+stop
+end split
+:finish;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="443" height="511" class="scale" src="/imgw/img-a36c1d4fc88059d6f6eaea2dc5cd468a.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="d23dee2d0707a741"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#22"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#22"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#22"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Complete example</h2>
+<p></p>
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg01251ea4de81bd3aae2a04982fe4ee49" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img01251ea4de81bd3aae2a04982fe4ee49" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('01251ea4de81bd3aae2a04982fe4ee49')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('01251ea4de81bd3aae2a04982fe4ee49')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('01251ea4de81bd3aae2a04982fe4ee49')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre01251ea4de81bd3aae2a04982fe4ee49">@startuml
+
+start
+:ClickServlet.handleRequest();
+:new page;
+if (Page.onSecurityCheck) then (true)
+  :Page.onInit();
+  if (isForward?) then (no)
+    :Process controls;
+    if (continue processing?) then (no)
+      stop
+    endif
+
+    if (isPost?) then (yes)
+      :Page.onPost();
+    else (no)
+      :Page.onGet();
+    endif
+    :Page.onRender();
+  endif
+else (false)
+endif
+
+if (do redirect?) then (yes)
+  :redirect process;
+else
+  if (do forward?) then (yes)
+    :Forward request;
+  else (no)
+    :Render page template;
+  endif
+endif
+
+stop
+
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="422" height="913" class="scale" src="/imgw/img-01251ea4de81bd3aae2a04982fe4ee49.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<a style="position:relative;top:-38px;" name="d6bf58f32e2a3e02"></a>
+<!--heading--></p><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#23"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#23"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#23"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Condition Style </h2>
+<p></p>
+<h3>Inside style (by default)</h3>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg95df8b40f2321b8603db7b16434e77c4" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img95df8b40f2321b8603db7b16434e77c4" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('95df8b40f2321b8603db7b16434e77c4')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('95df8b40f2321b8603db7b16434e77c4')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('95df8b40f2321b8603db7b16434e77c4')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre95df8b40f2321b8603db7b16434e77c4">@startuml
+skinparam conditionStyle inside
+start
+repeat
+  :act1;
+  :act2;
+repeatwhile (&lt;b&gt;end)
+:act3;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="105" height="300" class="scale" src="/imgw/img-95df8b40f2321b8603db7b16434e77c4.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg3f7b421466915583b27ad3e29f07a046" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img3f7b421466915583b27ad3e29f07a046" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('3f7b421466915583b27ad3e29f07a046')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('3f7b421466915583b27ad3e29f07a046')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('3f7b421466915583b27ad3e29f07a046')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre3f7b421466915583b27ad3e29f07a046">@startuml
+start
+repeat
+  :act1;
+  :act2;
+repeatwhile (&lt;b&gt;end)
+:act3;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="105" height="300" class="scale" src="/imgw/img-3f7b421466915583b27ad3e29f07a046.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3>Diamond style </h3>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msga18cf7d3d2bd5176b3a10bf44426f9a0" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imga18cf7d3d2bd5176b3a10bf44426f9a0" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('a18cf7d3d2bd5176b3a10bf44426f9a0')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('a18cf7d3d2bd5176b3a10bf44426f9a0')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('a18cf7d3d2bd5176b3a10bf44426f9a0')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prea18cf7d3d2bd5176b3a10bf44426f9a0">@startuml
+skinparam conditionStyle diamond
+start
+repeat
+  :act1;
+  :act2;
+repeatwhile (&lt;b&gt;end)
+:act3;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="91" height="300" class="scale" src="/imgw/img-a18cf7d3d2bd5176b3a10bf44426f9a0.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p></p>
+<p></p>
+<h3>InsideDiamond (or <em>Foo1</em>) style </h3>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgd2388e0b859d83192bd960ede0b3fbff" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgd2388e0b859d83192bd960ede0b3fbff" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('d2388e0b859d83192bd960ede0b3fbff')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('d2388e0b859d83192bd960ede0b3fbff')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('d2388e0b859d83192bd960ede0b3fbff')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pred2388e0b859d83192bd960ede0b3fbff">@startuml
+skinparam conditionStyle InsideDiamond
+start
+repeat
+  :act1;
+  :act2;
+repeatwhile (&lt;b&gt;end)
+:act3;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="100" height="311" class="scale" src="/imgw/img-d2388e0b859d83192bd960ede0b3fbff.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgfa43dfa54068f06ede34631fc1a6a0db" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgfa43dfa54068f06ede34631fc1a6a0db" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('fa43dfa54068f06ede34631fc1a6a0db')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('fa43dfa54068f06ede34631fc1a6a0db')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('fa43dfa54068f06ede34631fc1a6a0db')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="prefa43dfa54068f06ede34631fc1a6a0db">@startuml
+skinparam conditionStyle foo1
+start
+repeat
+  :act1;
+  :act2;
+repeatwhile (&lt;b&gt;end)
+:act3;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="100" height="311" class="scale" src="/imgw/img-fa43dfa54068f06ede34631fc1a6a0db.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/1290/plantuml-condition-rendering">QA-1290</a> and <a href="https://github.com/plantuml/plantuml/issues/400#issuecomment-721287124">#400</a>]</em>
+<a style="position:relative;top:-38px;" name="27fee13230d4c6de"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#24"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#24"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#24"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Condition End Style </h2>
+<p></p>
+<h3>Diamond style (by default)</h3>
+<p></p>
+<ul>
+<li>With one branch</li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msged914833407d45c3240453e81192ad0d" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imged914833407d45c3240453e81192ad0d" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('ed914833407d45c3240453e81192ad0d')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('ed914833407d45c3240453e81192ad0d')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('ed914833407d45c3240453e81192ad0d')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="preed914833407d45c3240453e81192ad0d">@startuml
+skinparam ConditionEndStyle diamond
+:A;
+if (decision) then (yes)
+    :B1;
+else (no)
+endif
+:C;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="121" height="259" class="scale" src="/imgw/img-ed914833407d45c3240453e81192ad0d.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<ul>
+<li>With two branches (<code class="cod">B1</code>, <code class="cod">B2</code>)</li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgd1a2bef650aa105d4332838da43374a2" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgd1a2bef650aa105d4332838da43374a2" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('d1a2bef650aa105d4332838da43374a2')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('d1a2bef650aa105d4332838da43374a2')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('d1a2bef650aa105d4332838da43374a2')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pred1a2bef650aa105d4332838da43374a2">@startuml
+skinparam ConditionEndStyle diamond
+:A;
+if (decision) then (yes)
+    :B1;
+else (no)
+    :B2;
+endif
+:C;
+@enduml
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="140" height="230" class="scale" src="/imgw/img-d1a2bef650aa105d4332838da43374a2.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<h3>Horizontal line (hline) style </h3>
+<ul>
+<li>With one branch</li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg9d687deb502136a722710c84a2de2965" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img9d687deb502136a722710c84a2de2965" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('9d687deb502136a722710c84a2de2965')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('9d687deb502136a722710c84a2de2965')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('9d687deb502136a722710c84a2de2965')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre9d687deb502136a722710c84a2de2965">@startuml
+skinparam ConditionEndStyle hline
+:A;
+if (decision) then (yes)
+    :B1;
+else (no)
+endif
+:C;
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="121" height="237" class="scale" src="/imgw/img-9d687deb502136a722710c84a2de2965.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<ul>
+<li>With two branches (<code class="cod">B1</code>, <code class="cod">B2</code>)</li>
+</ul>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg4dac3cb83effd8f5ebf7de56675666c3" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img4dac3cb83effd8f5ebf7de56675666c3" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('4dac3cb83effd8f5ebf7de56675666c3')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('4dac3cb83effd8f5ebf7de56675666c3')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('4dac3cb83effd8f5ebf7de56675666c3')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre4dac3cb83effd8f5ebf7de56675666c3">@startuml
+skinparam ConditionEndStyle hline
+:A;
+if (decision) then (yes)
+    :B1;
+else (no)
+    :B2;
+endif
+:C;
+@enduml
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="140" height="218" class="scale" src="/imgw/img-4dac3cb83effd8f5ebf7de56675666c3.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p></p>
+<em>[Ref. <a href="https://forum.plantuml.net/4015/its-possible-to-draw-if-else-endif-without-merge-symbol">QA-4015</a>]</em>
+<a style="position:relative;top:-38px;" name="bb2ede32ce6accb8"></a>
+<!--heading--><h2 class="chap"><img onclick="window.scrollTo(0,0);" title="Back to top" src="/backtop1.svg" width="20" height="20" class="backtop"><div class="dropdown"><button class="dropbtn"><img width="16" height="16" src="/edit1.svg"></button><div class="dropdown-content"><a href="http://alphadoc.plantuml.com/doc/dokuwiki/en/activity-diagram-beta#25"><img width="20" height="20" src="/dokuwiki.png">Edit in Dokuwiki</a><a href="http://alphadoc.plantuml.com/doc/asciidoc/en/activity-diagram-beta#25"><img width="20" height="20" src="/asciidoc32.png">Edit in Asciidoc</a><a href="http://alphadoc.plantuml.com/doc/markdown/en/activity-diagram-beta#25"><img width="20" height="20" src="/markdown.png">Edit in Markdown</a></div></div>Using (global) style</h2>
+<p></p>
+<h3>Without style <em>(by default)</em></h3>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msgcd45d48cb5e5a30852f17ed8caff2a84" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="imgcd45d48cb5e5a30852f17ed8caff2a84" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('cd45d48cb5e5a30852f17ed8caff2a84')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('cd45d48cb5e5a30852f17ed8caff2a84')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('cd45d48cb5e5a30852f17ed8caff2a84')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="precd45d48cb5e5a30852f17ed8caff2a84">@startuml
+start
+:init;
+-&gt; test of color;
+if (color?) is (&lt;color:red&gt;red) then
+:print red;
+else 
+:print not red;
+note right: no color
+endif
+partition End {
+:end;
+}
+-&gt; this is the end;
+end
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="277" height="391" class="scale" src="/imgw/img-cd45d48cb5e5a30852f17ed8caff2a84.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p><p></p>
+<p></p>
+<h3>With style</h3>
+<p></p>
+You can use <a href="style-evolution">style</a> to change rendering of elements.
+<p></p>
+<p>
+<table class="coptable" valign="top" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="top">
+<div id="msg9901d5b53a29de566cd461c06a27046e" class="msg">
+🎉 Copied!
+</div>
+<img loading="lazy" width="16" height="16" id="img9901d5b53a29de566cd461c06a27046e" title="Copy to clipboard" class="cop" src="/clipboard1.svg" onclick="ctc('9901d5b53a29de566cd461c06a27046e')">
+<br>
+<img loading="lazy" width="16" height="16" title="Edit online" class="cop" src="/edit1.svg" onclick="javascript:ljs('9901d5b53a29de566cd461c06a27046e')">
+</td>
+<td>
+<div class="mytab" onclick="javascript:ljs('9901d5b53a29de566cd461c06a27046e')">
+<div class="mycell0">
+<code onmouseover="az=1" onmouseout="az=0"><pre id="pre9901d5b53a29de566cd461c06a27046e">@startuml
+&lt;style&gt;
+activityDiagram {
+  BackgroundColor #33668E
+  BorderColor #33668E
+  FontColor #888
+  FontName arial
+
+  diamond {
+    BackgroundColor #ccf
+    LineColor #00FF00
+    FontColor green
+    FontName arial
+    FontSize 15
+  }
+  arrow {
+    FontColor gold
+    FontName arial
+    FontSize 15
+  }
+  partition {
+    LineColor red
+    FontColor green
+    RoundCorner 10
+    BackgroundColor PeachPuff
+  }
+  note {
+    FontColor Blue
+    LineColor Navy
+    BackgroundColor #ccf
+  }
+}
+document {
+   BackgroundColor transparent
+}
+&lt;/style&gt;
+start
+:init;
+-&gt; test of color;
+if (color?) is (&lt;color:red&gt;red) then
+:print red;
+else 
+:print not red;
+note right: no color
+endif
+partition End {
+:end;
+}
+-&gt; this is the end;
+end
+@enduml
+</pre></code>
+</div>
+<div class="mycell">
+<img loading="lazy" width="277" height="392" class="scale" src="/imgw/img-9901d5b53a29de566cd461c06a27046e.png">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</p><p>
+</p></div><!--content-->
+
+
+<!--B--><div class="eole-col">
+<div class="eole-sticky">
+<div class="eole-container">
+
+<div>
+<!-- Ezoic - middle336 - sidebar_middle -->
+<span id="ezoic-pub-ad-placeholder-672"></span><span data-ez-ph-id="672"></span>
+<!-- End Ezoic - middle336 - sidebar_middle -->
+</div>
+
+
+<!-- eole-scroll --><div class="eole-scroll">
+
+<!--toc-->
+<div id="toc">
+<ul>
+<li><a href="#301241875e1def42">Simple action</a>
+</li><li><a href="#45e7ad1c1b3c39e2">Start/Stop/End</a>
+</li><li><a href="#9d3afea73e90192d">Conditional</a>
+</li><li><a href="#537b5a761669087b">Switch and case [switch, case, endswitch]</a>
+</li><li><a href="#d7b1027a512b4d7b">Conditional with stop on an action [kill, detach]</a>
+</li><li><a href="#219cebcef334f265">Repeat loop</a>
+</li><li><a href="#76b6256d62540b9f">Break on a repeat loop [break]</a>
+</li><li><a href="#2f8a92e645aba14f">Goto and Label Processing [label, goto]</a>
+</li><li><a href="#04a96ae1910f3c8a">While loop</a>
+</li><li><a href="#7452578bfebedd2d">Parallel processing [fork, fork again, end fork, end merge]</a>
+</li><li><a href="#39d488a91ed5c8d2">Split processing</a>
+</li><li><a href="#f4c6f851b00d5518">Notes</a>
+</li><li><a href="#5d50889672f6f860">Colors</a>
+</li><li><a href="#6299b1bc9965f62f">Lines without arrows</a>
+</li><li><a href="#4e05974b02cc4aa9">Arrows</a>
+</li><li><a href="#edf21d7ecb364e82">Connector</a>
+</li><li><a href="#2f8c97b04c4fc1f5">Color on connector</a>
+</li><li><a href="#772273da3919bcd1">Grouping or partition</a>
+</li><li><a href="#dadd115c61036c7a">Swimlanes</a>
+</li><li><a href="#d02f7ddcfafa91da">Detach or kill [detach, kill]</a>
+</li><li><a href="#7420c7766a064a28">SDL (Specification and Description Language)</a>
+</li><li><a href="#d23dee2d0707a741">Complete example</a>
+</li><li><a href="#d6bf58f32e2a3e02">Condition Style</a>
+</li><li><a href="#27fee13230d4c6de">Condition End Style</a>
+</li><li><a href="#bb2ede32ce6accb8">Using (global) style</a>
+</li></ul>
+</div>
+
+
+</div><!--eole-scroll-->
+
+
+<div>
+<!-- Ezoic - middle336B - sidebar_middle -->
+<span id="ezoic-pub-ad-placeholder-673"></span><span data-ez-ph-id="673"></span>
+<!-- End Ezoic - middle336B - sidebar_middle -->
+</div>
+
+
+</div><!--eole-container -->
+</div><!--eole-sticky-->
+</div><!--B-->
+
+</div>

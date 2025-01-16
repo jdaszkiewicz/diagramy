@@ -1,0 +1,35 @@
+@startuml
+class Użytkownik {
+    +id: int
+    +login: string
+    +hasło: string
+    +email: string
+    +rola: string
+}
+
+class Klient {
+    +imię: string
+    +nazwisko: string
+    +telefon: string
+}
+
+class Pracownik {
+    +imię: string
+    +nazwisko: string
+    +telefon: string
+    +rola: string
+}
+
+class Recepcjonista {
+    +uprawnienia: string
+}
+
+class Menadżer {
+    +uprawnienia: string
+}
+
+Użytkownik <|-- Klient
+Użytkownik <|-- Pracownik
+Pracownik <|-- Recepcjonista
+Pracownik <|-- Menadżer
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+class Pokój {
+    +id: int
+    +numer: string
+    +typ: string
+    +opis: string
+    +cena: float
+    +dostępny: boolean
+}
+
+class Rezerwacja {
+    +id: int
+    +data_od: date
+    +data_do: date
+    +status: string
+}
+
+class Klient {
+    +id: int
+    +imię: string
+    +nazwisko: string
+}
+
+Pokój "1" *-- "0..*" Rezerwacja
+Klient "1" *-- "0..*" Rezerwacja
+@enduml

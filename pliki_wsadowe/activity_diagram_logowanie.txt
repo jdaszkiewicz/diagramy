@@ -1,0 +1,16 @@
+ @startuml
+ title Diagram Aktywności Logowania
+
+ start
+
+ repeat :Użytkownik wprowadza login i hasło;
+   :System weryfikuje dane logowania;
+   backward :System wyświetla komunikat o błędzie;
+ repeat while (Dane poprawne?) is (nie)
+ ->tak;
+
+ :System loguje użytkownika;
+ :System przekierowuje do panelu użytkownika;
+
+ stop
+ @enduml

@@ -1,0 +1,24 @@
+@startuml
+ title Diagram Aktywności Zmiany Rezerwacji
+
+ start
+
+ repeat :Klient wybiera rezerwację do zmiany;
+   repeat :Klient wybiera nowe daty lub pokój;
+     :System sprawdza dostępność;
+   repeat while (Pokój dostępny?) is (nie)
+   ->tak;
+     :System wyświetla podsumowanie zmiany;
+
+     if (Klient akceptuje zmianę?) then (tak)
+       :System zapisuje zmianę w bazie danych;
+       :System wyświetla potwierdzenie;
+     else (nie)
+       :System anuluje proces zmiany;
+     endif
+
+
+ repeat while (Czy klient chce kontynuować?) is (tak) not (nie)
+ stop
+
+ @enduml

@@ -1,0 +1,24 @@
+@startuml
+class Dostawca {
+    +id: int
+    +nazwa: string
+    +umowa_od: date
+    +umowa_do: date
+    +provision: float
+}
+
+class Cennik {
+    +id: int
+    +cena_bazowa: float
+    +cena_ostateczna: float
+    +data_obowiązywania: date
+}
+
+class Pokój {
+    +id: int
+    +numer: string
+}
+
+Dostawca "1" *-- "0..*" Cennik
+Pokój "1" *-- "0..*" Cennik
+@enduml

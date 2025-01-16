@@ -1,0 +1,31 @@
+ @startuml
+ title Diagram Aktywności Zarządzania Pokojami
+
+ start
+
+ :Wyświetl menu zarządzania pokojami;
+
+ if (Dodaj pokój?) then (tak)
+   :System prosi o dane i zapisuje nowy pokój:
+   - Numer
+   - Typ
+   - Opis
+   - Cena;
+ elseif (Edytuj pokój?) then (tak)
+   :System prosi o numer i wprowadza zmiany:
+   - Wyświetla dane
+   - Akceptuje zmiany
+   - Zapisuje w bazie;
+ elseif (Usuń pokój?) then (tak)
+   :System prosi o numer i usuwa pokój:
+   - Potwierdzenie
+   - Usunięcie z bazy;
+ else (żadna opcja)
+   :System wyświetla komunikat o błędzie;
+ endif
+
+ :System wyświetla potwierdzenie operacji;
+
+ stop
+
+ @enduml

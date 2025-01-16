@@ -1,0 +1,21 @@
+@startuml
+ start
+
+ repeat :Klient wybiera pokój, daty pobytu
+ i podaje dane osobowe;
+   backward :System wyświetla błędy w danych;
+ repeat while (Dane poprawne i Pokój dostępny) is (nie)
+ ->tak;
+
+ :System wyświetla podsumowanie rezerwacji;
+
+ if (Klient akceptuje?) then (tak)
+   :System zapisuje rezerwację w bazie danych;
+   :System wysyła potwierdzenie na email;
+   :System aktualizuje dostępność pokoju;
+ else (nie)
+   :Anuluj proces rezerwacji;
+ endif
+
+ stop
+ @endumljakie

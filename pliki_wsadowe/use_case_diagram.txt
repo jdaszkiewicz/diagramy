@@ -1,0 +1,64 @@
+@startuml
+title Diagram Przypadków Użycia - System Rezerwacji Hotelowej
+
+left to right direction
+
+actor Klient
+actor "Pracownik Hotelu" as Pracownik
+actor "System Zewnętrzny" as ExternalSystem #lightblue
+
+package "System Rezerwacji" {
+  usecase "Przeglądanie dostępnych pokoi" as UC1
+  usecase "Rezerwacja pokoju" as UC2
+  usecase "Anulowanie rezerwacji" as UC3
+  usecase "Logowanie do systemu" as UC4
+  usecase "Rejestracja w systemie" as UC5
+  usecase "Przeglądanie rezerwacji" as UC6
+  
+  usecase "Zarządzanie pokojami" as UC7
+  usecase "Potwierdzanie rezerwacji" as UC8
+  usecase "Obsługa gości" as UC9
+  usecase "Przeglądanie rezerwacji" as UC10
+  usecase "Logowanie do systemu" as UC11
+  
+  usecase "Konfiguracja integracji z dostawcami" as UC12
+  usecase "Monitorowanie statusu integracji" as UC13
+  usecase "Ręczna synchronizacja danych" as UC14
+  
+  usecase "Synchronizacja rezerwacji" as UC15
+  usecase "Synchronizacja dostępności pokoi" as UC16
+  usecase "Synchronizacja cen" as UC17
+  
+  UC12 .> UC15 : <<include>>
+  UC12 .> UC16 : <<include>>
+  UC12 .> UC17 : <<include>>
+  
+  note right of UC17
+    Synchronizacja cen obejmuje:
+    - Pobieranie aktualnych cen z platform
+    - Weryfikację zgodności
+    - Aktualizację lokalnego cennika
+  end note
+}
+
+Klient --> UC1
+Klient --> UC2
+Klient --> UC3
+Klient --> UC4
+Klient --> UC5
+Klient --> UC6
+
+Pracownik --> UC7
+Pracownik --> UC8
+Pracownik --> UC9
+Pracownik --> UC10
+Pracownik --> UC11
+Pracownik --> UC12
+Pracownik --> UC13
+Pracownik --> UC14
+
+ExternalSystem --> UC15
+ExternalSystem --> UC16
+ExternalSystem --> UC17
+
+@enduml
